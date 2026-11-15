@@ -1,0 +1,397 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+6 0 obj
+<< /Length 5624 >>
+stream
+1 w
+0.31 0.27 0.9 rg
+36 805 523 4 re
+f
+
+BT /F1 18 Tf 0.12 0.11 0.29 rg 40 790 Td (QuickCart  Loom 1-Minute-Per-Part Speech Guide) Tj ET
+BT /F2 10 Tf 0.31 0.27 0.9 rg 40 774 Td (Complete Screen Recording Script & Walkthrough \(100 Marks\)) Tj ET
+1 w
+0.97 0.98 0.99 rg
+0.85 0.88 0.92 RG
+38 740 519 18 re
+B
+
+BT /F1 8.5 Tf 0.15 0.23 0.36 rg 46 745 Td (Target Duration:) Tj ET
+BT /F2 8.5 Tf 0.3 0.35 0.45 rg 128 745 Td (6 to 7 Minutes) Tj ET
+BT /F1 8.5 Tf 0.15 0.23 0.36 rg 211 745 Td (Format:) Tj ET
+BT /F2 8.5 Tf 0.3 0.35 0.45 rg 246.2 745 Td (1 Minute per Part \(A to F\)) Tj ET
+BT /F1 8.5 Tf 0.15 0.23 0.36 rg 376 745 Td (Language:) Tj ET
+BT /F2 8.5 Tf 0.3 0.35 0.45 rg 421.6 745 Td (Modern ES6+ Vanilla JS) Tj ET
+BT /F1 12.5 Tf 0.12 0.11 0.29 rg 42 712 Td (<ô Section 0: Introduction & Overview) Tj ET
+BT /F1 9 Tf 0.27 0.22 0.79 rg 440 712 Td ([ 0:00 - 0:45 \(45s\) ]) Tj ET
+0.75 w
+0.94 0.99 0.95 rg
+0.55 0.85 0.6 RG
+40 674 515 34 re
+B
+
+BT /F1 8.5 Tf 0.08 0.4 0.18 rg 46 696 Td (SCREEN CUE: ) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 115 696 Td (Show repository tree in VS Code or open index.html master portal in your) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 46 684 Td (browser.) Tj ET
+BT /F1 9 Tf 0.18 0.16 0.45 rg 42 662 Td (SPEECH SCRIPT (Speak clearly for ~1 min):) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 649 Td ("Hello everyone! My name is Venkat, and today I am excited to present my solution) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 636.5 Td (for the QuickCart Advanced JavaScript Practical Assignment.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 620 Td (QuickCart is a real-world e-commerce order management system that faced) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 607.5 Td (architectural challenges across object inheritance, array calculations, JSON) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 595 Td (parsing, asynchronous order execution, and DOM performance bottlenecks.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 578.5 Td (I have resolved all 6 partsfrom Part A through Part Fusing pure, modern) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 566 Td (JavaScript \(ES6+\) with zero external libraries. Every part executes flawlessly in) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 553.5 Td (Node.js and is fully configured for deployment on Vercel. Let's begin with Part) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 541 Td (A!") Tj ET
+0.5 w 0.88 0.9 0.94 RG 42 526.5 m 550 526.5 l S
+BT /F1 8 Tf 0.3 0.35 0.45 rg 44 516.5 Td (KEY TECHNICAL HIGHLIGHTS: ) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 180 516.5 Td (Self-introduction, QuickCart scenario, ES6+ pure JavaScript, 100/100) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 44 506.5 Td (marks structure.) Tj ET
+0.75 w
+0.82 0.85 0.9 RG
+38 494.5 519 233.5 re
+S
+
+BT /F1 12.5 Tf 0.12 0.11 0.29 rg 42 468.5 Td (=Ê Section 1: Part A  Objects, Prototypes & ES6 Classes) Tj ET
+BT /F1 9 Tf 0.27 0.22 0.79 rg 440 468.5 Td ([ 0:45 - 1:45 \(1 min\) ]) Tj ET
+0.75 w
+0.94 0.99 0.95 rg
+0.55 0.85 0.6 RG
+40 430.5 515 34 re
+B
+
+BT /F1 8.5 Tf 0.08 0.4 0.18 rg 46 452.5 Td (SCREEN CUE: ) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 115 452.5 Td (Open part-a-objects-classes/products.js in editor and run 'node) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 46 440.5 Td (part-a-objects-classes/products.js'.) Tj ET
+BT /F1 9 Tf 0.18 0.16 0.45 rg 42 418.5 Td (SPEECH SCRIPT (Speak clearly for ~1 min):) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 405.5 Td ("In Part A, we solve duplicated method allocations and inconsistent object) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 393 Td (structures.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 376.5 Td (In Task 1, I created the Product constructor and attached displayProduct\(\) to) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 364 Td (Product.prototype. This is critical for memory efficiency: prototype methods share) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 351.5 Td (a single function reference across all instances via the __proto__ chain, rather) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 339 Td (than duplicating the function closure in memory on every new instance. If a) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 326.5 Td (property is not on the object, JavaScript ascends the prototype chain until null.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 310 Td (In Task 2, I migrated to ES6 classes, extending ProductClass into) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 297.5 Td (ElectronicProduct and ClothingProduct. I used super\(\) in derived constructors) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 285 Td (because derived classes cannot access 'this' before super\(\) executesdoing so) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 272.5 Td (throws a ReferenceError due to the Temporal Dead Zone.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 256 Td (In Task 3, I implemented modern checkout syntax: an arrow function for discount) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 243.5 Td (calculations, a template literal for confirmation, object destructuring for) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 231 Td (customer details, the rest operator for dynamic pricing totals, and the spread) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 218.5 Td (operator to create immutable copies without mutating original objects.") Tj ET
+0.5 w 0.88 0.9 0.94 RG 42 204 m 550 204 l S
+BT /F1 8 Tf 0.3 0.35 0.45 rg 44 194 Td (KEY TECHNICAL HIGHLIGHTS: ) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 180 194 Td (Prototype memory sharing vs constructor closure; __proto__ vs) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 44 184 Td (prototype; super\(\) initializing 'this'; immutability via spread.) Tj ET
+0.75 w
+0.82 0.85 0.9 RG
+38 172 519 312.5 re
+S
+
+BT /F2 8.5 Tf 0.5 0.55 0.65 rg 240 24 Td (Page 1 of 4 | QuickCart Loom Presentation Guide) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 6 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 6076 >>
+stream
+1 w
+0.31 0.27 0.9 rg
+36 805 523 4 re
+f
+
+BT /F1 18 Tf 0.12 0.11 0.29 rg 40 790 Td (QuickCart  Loom 1-Minute-Per-Part Speech Guide) Tj ET
+BT /F2 10 Tf 0.31 0.27 0.9 rg 40 774 Td (Complete Screen Recording Script & Walkthrough \(100 Marks\)) Tj ET
+BT /F1 12.5 Tf 0.12 0.11 0.29 rg 42 740 Td (=“ Section 2: Part B  Higher-Order Functions, Map, Set & Object Methods) Tj ET
+BT /F1 9 Tf 0.27 0.22 0.79 rg 440 740 Td ([ 1:45 - 2:45 \(1 min\) ]) Tj ET
+0.75 w
+0.94 0.99 0.95 rg
+0.55 0.85 0.6 RG
+40 702 515 34 re
+B
+
+BT /F1 8.5 Tf 0.08 0.4 0.18 rg 46 724 Td (SCREEN CUE: ) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 115 724 Td (Open part-b-array-methods/shopping-cart.js and run 'node) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 46 712 Td (part-b-array-methods/shopping-cart.js'.) Tj ET
+BT /F1 9 Tf 0.18 0.16 0.45 rg 42 690 Td (SPEECH SCRIPT (Speak clearly for ~1 min):) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 677 Td ("In Part B, we manage a customer's shopping cart using declarative higher-order) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 664.5 Td (functions.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 648 Td (In Task 1, I used map\(\) to calculate total item prices \(price * qty\), filter\(\) to) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 635.5 Td (select products with unit price over π2,000, and reduce\(\) to accumulate the grand) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 623 Td (cart value of π70,100. Unlike forEach\(\), which executes side-effects and returns) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 610.5 Td (undefined, map\(\) returns a new transformed array, and filter\(\) is completely) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 598 Td (non-mutating. I also chained filter and reduce to compute the Electronics total of) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 585.5 Td (π62,000.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 569 Td (In Task 2, I implemented an inventory tracker using a JavaScript Map. Maps are) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 556.5 Td (superior to plain objects because keys can be of any type, insertion order is) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 544 Td (guaranteed, and it provides an instant .size property. To remove duplicate) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 531.5 Td (customer emails, I used a Set, which deduplicates values automatically in O\(N\)) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 519 Td (linear time.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 502.5 Td (In Task 3, I tested Object.freeze\(\) versus Object.seal\(\). While seal\(\) permits) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 490 Td (modifying existing writable properties like price, freeze\(\) makes the object) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 477.5 Td (completely immutable and read-only, preventing modifications, additions, and) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 465 Td (deletions.") Tj ET
+0.5 w 0.88 0.9 0.94 RG 42 450.5 m 550 450.5 l S
+BT /F1 8 Tf 0.3 0.35 0.45 rg 44 440.5 Td (KEY TECHNICAL HIGHLIGHTS: ) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 180 440.5 Td (map\(\) vs forEach\(\); pure non-mutating filter\(\); Map vs plain Object;) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 44 430.5 Td (Object.freeze\(\) vs Object.seal\(\).) Tj ET
+0.75 w
+0.82 0.85 0.9 RG
+38 418.5 519 337.5 re
+S
+
+BT /F1 12.5 Tf 0.12 0.11 0.29 rg 42 392.5 Td (= Section 3: Part C  JSON Handling & Output-Based Debugging) Tj ET
+BT /F1 9 Tf 0.27 0.22 0.79 rg 440 392.5 Td ([ 2:45 - 3:45 \(1 min\) ]) Tj ET
+0.75 w
+0.94 0.99 0.95 rg
+0.55 0.85 0.6 RG
+40 354.5 515 34 re
+B
+
+BT /F1 8.5 Tf 0.08 0.4 0.18 rg 46 376.5 Td (SCREEN CUE: ) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 115 376.5 Td (Open part-c-json-debugging/json-handling.js and run 'node) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 46 364.5 Td (part-c-json-debugging/json-handling.js'.) Tj ET
+BT /F1 9 Tf 0.18 0.16 0.45 rg 42 342.5 Td (SPEECH SCRIPT (Speak clearly for ~1 min):) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 329.5 Td ("In Part C, we handle API data interchange and debug subtle JSON conversion edge) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 317 Td (cases.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 300.5 Td (In Task 1, I serialized an order object containing undefined, null, and a tax) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 288 Td (calculation function. During JSON.stringify\(\), the deliveryDate property) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 275.5 Td (\(undefined\) and the calculateTax function are completely omitted. This happens) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 263 Td (because JSON is a language-agnostic data format that intentionally excludes) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 250.5 Td (runtime JavaScript concepts like undefined and closures. However, discount: null) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 238 Td (is safely preserved because null is an official JSON primitive.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 221.5 Td (In Task 2, I verified all 6 output prediction challenges: In objects, undefined is) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 209 Td (omitted, but in arrays, it converts to null to maintain index alignments. NaN and) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 196.5 Td (Infinity convert to null because JSON only supports finite IEEE 754 numbers.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 184 Td (Single-quoted JSON strings throw a SyntaxError because JSON requires double) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 171.5 Td (quotes. Circular references throw a TypeError to avoid infinite serialization) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 159 Td (loops. And Date objects serialize to ISO 8601 strings via their built-in toJSON\(\)) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 146.5 Td (method.") Tj ET
+0.5 w 0.88 0.9 0.94 RG 42 132 m 550 132 l S
+BT /F1 8 Tf 0.3 0.35 0.45 rg 44 122 Td (KEY TECHNICAL HIGHLIGHTS: ) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 180 122 Td (Why undefined/functions drop in JSON; array preservation via null;) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 44 112 Td (NaN/Infinity handling; circular reference TypeError.) Tj ET
+0.75 w
+0.82 0.85 0.9 RG
+38 100 519 308.5 re
+S
+
+BT /F2 8.5 Tf 0.5 0.55 0.65 rg 240 24 Td (Page 2 of 4 | QuickCart Loom Presentation Guide) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 6312 >>
+stream
+1 w
+0.31 0.27 0.9 rg
+36 805 523 4 re
+f
+
+BT /F1 18 Tf 0.12 0.11 0.29 rg 40 790 Td (QuickCart  Loom 1-Minute-Per-Part Speech Guide) Tj ET
+BT /F2 10 Tf 0.31 0.27 0.9 rg 40 774 Td (Complete Screen Recording Script & Walkthrough \(100 Marks\)) Tj ET
+BT /F1 12.5 Tf 0.12 0.11 0.29 rg 42 740 Td (° Section 4: Part D  Asynchronous JavaScript & Promises) Tj ET
+BT /F1 9 Tf 0.27 0.22 0.79 rg 440 740 Td ([ 3:45 - 4:45 \(1 min\) ]) Tj ET
+0.75 w
+0.94 0.99 0.95 rg
+0.55 0.85 0.6 RG
+40 702 515 34 re
+B
+
+BT /F1 8.5 Tf 0.08 0.4 0.18 rg 46 724 Td (SCREEN CUE: ) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 115 724 Td (Open part-d-asynchronous/order-processing.js and run 'node) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 46 712 Td (part-d-asynchronous/order-processing.js'.) Tj ET
+BT /F1 9 Tf 0.18 0.16 0.45 rg 42 690 Td (SPEECH SCRIPT (Speak clearly for ~1 min):) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 677 Td ("In Part D, we examine JavaScript's single-threaded asynchronous execution) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 664.5 Td (architecture.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 648 Td (In Task 1, we trace the Event Loop. Synchronous code on the Call Stack runs first:) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 635.5 Td ('Order Started' and 'Order Completed'. Then the Event Loop drains the Microtask) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 623 Td (Queuewhich is why Promise.then fires next with 'Payment Successful'before) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 610.5 Td (finally picking the setTimeout callback from the Macrotask Queue for 'Payment) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 598 Td (Processing'.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 581.5 Td (In Tasks 2, 3, and 4, I demonstrated the asynchronous evolution: starting with) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 569 Td (nested sequential callbacks, showing how callback hell leads to deep nesting and) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 556.5 Td (fragile error propagation; then refactoring to a clean Promise chain with .then\(\)) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 544 Td (and .catch\(\); and ultimately implementing an async/await placeOrder\(\) workflow) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 531.5 Td (with try/catch handling both success and simulated payment gateway timeouts.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 515 Td (In Task 5, I demonstrated all 4 Promise combinators: Promise.all fast-fails when) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 502.5 Td (the payment service rejects; Promise.allSettled waits for all 3 outcomes;) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 490 Td (Promise.race settles with the earliest response at 1000ms; and Promise.any returns) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 477.5 Td (the first fulfilled success.") Tj ET
+0.5 w 0.88 0.9 0.94 RG 42 463 m 550 463 l S
+BT /F1 8 Tf 0.3 0.35 0.45 rg 44 453 Td (KEY TECHNICAL HIGHLIGHTS: ) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 180 453 Td (Microtask queue priority over macrotasks; callback hell pitfalls;) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 44 443 Td (Promise chaining; all vs allSettled vs race vs any.) Tj ET
+0.75 w
+0.82 0.85 0.9 RG
+38 431 519 325 re
+S
+
+BT /F1 12.5 Tf 0.12 0.11 0.29 rg 42 405 Td (<® Section 5: Part E  Performance Optimization & DOM Events) Tj ET
+BT /F1 9 Tf 0.27 0.22 0.79 rg 440 405 Td ([ 4:45 - 5:45 \(1 min\) ]) Tj ET
+0.75 w
+0.94 0.99 0.95 rg
+0.55 0.85 0.6 RG
+40 367 515 34 re
+B
+
+BT /F1 8.5 Tf 0.08 0.4 0.18 rg 46 389 Td (SCREEN CUE: ) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 115 389 Td (Open part-e-optimization-events/index.html live in browser. Type in search,) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 46 377 Td (scroll box, click calculate & remove.) Tj ET
+BT /F1 9 Tf 0.18 0.16 0.45 rg 42 355 Td (SPEECH SCRIPT (Speak clearly for ~1 min):) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 342 Td ("Now let's switch to the browser to demonstrate Part E's live DOM performance) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 329.5 Td (playground.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 313 Td (In Task 1 \(Debouncing\): Notice as I type rapidly in this search field, the raw) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 300.5 Td (keystrokes count increments on every letter, but the actual search API only fires) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 288 Td (after I pause typing for 500 ms. This protects backend servers from excessive) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 275.5 Td (keystroke requests.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 259 Td (In Task 2 \(Throttling\): In this scroll viewport, scrolling triggers dozens of) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 246.5 Td (events, but the throttle wrapper regulates execution to fire at most once every) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 234 Td (1,000 ms, ensuring silky-smooth UI performance.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 217.5 Td (In Task 3 \(Memoization\): When I calculate a 10% discount on π50,000, it computes) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 205 Td (fresh. When I click calculate again with identical inputs, it returns instantly) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 192.5 Td (from the lexical closure cache with this orange badge!) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 176 Td (In Task 4 \(Bubbling & Delegation\): I attached a single click listener to the) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 163.5 Td (parent container. Clicking Remove bubbles up to the parent, finds the target via) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 151 Td (event.target.closest\(\), and removes the item. If I enable stopPropagation,) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 138.5 Td (bubbling to the parent is stopped. And clicking 'Add Product' dynamically proves) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 126 Td (that new items are handled automatically without binding new event listeners!") Tj ET
+0.5 w 0.88 0.9 0.94 RG 42 111.5 m 550 111.5 l S
+BT /F1 8 Tf 0.3 0.35 0.45 rg 44 101.5 Td (KEY TECHNICAL HIGHLIGHTS: ) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 180 101.5 Td (Debounce vs throttle use-cases; closure cache encapsulation;) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 44 91.5 Td (bubbling phase; event.target vs currentTarget; delegation memory) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 44 81.5 Td (savings.) Tj ET
+0.75 w
+0.82 0.85 0.9 RG
+38 69.5 519 351.5 re
+S
+
+BT /F2 8.5 Tf 0.5 0.55 0.65 rg 240 24 Td (Page 3 of 4 | QuickCart Loom Presentation Guide) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+12 0 obj
+<< /Length 5117 >>
+stream
+1 w
+0.31 0.27 0.9 rg
+36 805 523 4 re
+f
+
+BT /F1 18 Tf 0.12 0.11 0.29 rg 40 790 Td (QuickCart  Loom 1-Minute-Per-Part Speech Guide) Tj ET
+BT /F2 10 Tf 0.31 0.27 0.9 rg 40 774 Td (Complete Screen Recording Script & Walkthrough \(100 Marks\)) Tj ET
+BT /F1 12.5 Tf 0.12 0.11 0.29 rg 42 740 Td (<∆ Section 6: Part F  Final Integration Challenge & Summary) Tj ET
+BT /F1 9 Tf 0.27 0.22 0.79 rg 440 740 Td ([ 5:45 - 6:45 \(1 min\) ]) Tj ET
+0.75 w
+0.94 0.99 0.95 rg
+0.55 0.85 0.6 RG
+40 702 515 34 re
+B
+
+BT /F1 8.5 Tf 0.08 0.4 0.18 rg 46 724 Td (SCREEN CUE: ) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 115 724 Td (Run 'node part-f-integration/quickcart.js' or show the master Vercel portal) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 46 712 Td (index.html in the browser.) Tj ET
+BT /F1 9 Tf 0.18 0.16 0.45 rg 42 690 Td (SPEECH SCRIPT (Speak clearly for ~1 min):) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 677 Td ("Finally, Part F brings every single concept together into an end-to-end real-time) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 664.5 Td (order confirmation pipeline.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 648 Td (In quickcart.js, we take customer Rahul's order. We model items with a Product) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 635.5 Td (class, extract properties using destructuring, calculate item totals using map\(\),) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 623 Td (filter high-value products over π5,000, compute the grand order total with) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 610.5 Td (reduce\(\), store unique product IDs in a Set, track stock in a Map, enforce) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 598 Td (immutability with Object.freeze\(\), and simulate asynchronous verification via) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 585.5 Td (async/await with try/catch.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 569 Td (As you can see in the terminal output, the values are completely computednot) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 556.5 Td (hardcoded: Total Order Amount of π69,000, 4 Unique Products, and the status) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 544 Td (transitions seamlessly from 'Processing...' to 'Confirmed Successfully!'.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 527.5 Td (The complete project is committed and pushed to GitHub at) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 515 Td (Venkat5674/quickcart_irp_task_3, accompanied by a comprehensive README and) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 502.5 Td (vercel.json for instant edge deployment. Thank you so much for your time and) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 490 Td (evaluation!") Tj ET
+0.5 w 0.88 0.9 0.94 RG 42 475.5 m 550 475.5 l S
+BT /F1 8 Tf 0.3 0.35 0.45 rg 44 465.5 Td (KEY TECHNICAL HIGHLIGHTS: ) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 180 465.5 Td (Computed π69,000 total; Set unique count 4; async status) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 44 455.5 Td (confirmation; GitHub & Vercel deployment readiness.) Tj ET
+0.75 w
+0.82 0.85 0.9 RG
+38 443.5 519 312.5 re
+S
+
+BT /F1 12.5 Tf 0.12 0.11 0.29 rg 42 417.5 Td (<Ø Speaker Checklist & Loom Recording Tips) Tj ET
+BT /F1 9 Tf 0.27 0.22 0.79 rg 440 417.5 Td ([ Pre-Recording Checklist ]) Tj ET
+0.75 w
+0.94 0.99 0.95 rg
+0.55 0.85 0.6 RG
+40 379.5 515 34 re
+B
+
+BT /F1 8.5 Tf 0.08 0.4 0.18 rg 46 401.5 Td (SCREEN CUE: ) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 115 401.5 Td (Keep terminal clear and font size set to 14-16px for crisp 1080p video) Tj ET
+BT /F3 8.5 Tf 0.08 0.4 0.18 rg 46 389.5 Td (recording.) Tj ET
+BT /F1 9 Tf 0.18 0.16 0.45 rg 42 367.5 Td (SPEECH SCRIPT (Speak clearly for ~1 min):) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 354.5 Td (1. Screen Layout: Split screen 50/50 with VS Code/Terminal on the left and) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 342 Td (Chrome/Edge on the right.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 325.5 Td (2. Terminal Commands: Have 'node part-a-objects-classes/products.js', 'part-b',) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 313 Td ('part-c', 'part-d', and 'part-f' queued in terminal history so you can press) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 300.5 Td (Up-Arrow + Enter seamlessly.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 284 Td (3. Pacing: Speak at a steady conversational pace \(~120 words per minute\). Don't) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 271.5 Td (rush; pause for 2 seconds after each terminal command so the reviewer can read the) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 259 Td (clean output.) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 242.5 Td (4. Live Link & Submission: Mention that the live Vercel portal and public GitHub) Tj ET
+BT /F2 9.5 Tf 0.08 0.1 0.18 rg 44 230 Td (repository links are included in the submission.) Tj ET
+0.5 w 0.88 0.9 0.94 RG 42 215.5 m 550 215.5 l S
+BT /F1 8 Tf 0.3 0.35 0.45 rg 44 205.5 Td (KEY TECHNICAL HIGHLIGHTS: ) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 180 205.5 Td (Loom video tip: Keep face bubble in bottom-left corner to avoid) Tj ET
+BT /F2 8 Tf 0.3 0.35 0.45 rg 44 195.5 Td (obscuring code or browser UI.) Tj ET
+0.75 w
+0.82 0.85 0.9 RG
+38 183.5 519 250 re
+S
+
+BT /F2 8.5 Tf 0.5 0.55 0.65 rg 240 24 Td (Page 4 of 4 | QuickCart Loom Presentation Guide) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 12 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000141 00000 n 
+0000000216 00000 n 
+0000000286 00000 n 
+0000000364 00000 n 
+0000006024 00000 n 
+0000006176 00000 n 
+0000012288 00000 n 
+0000012440 00000 n 
+0000018789 00000 n 
+0000018943 00000 n 
+0000024097 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+24251
+%%EOF

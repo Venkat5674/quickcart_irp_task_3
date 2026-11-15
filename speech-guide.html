@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuickCart Loom Walkthrough - 1-Minute Per Part Speech Guide</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm 18mm 16mm;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.5;
+      font-size: 11pt;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      border-bottom: 2px solid #4f46e5;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 20pt;
+      font-weight: 800;
+      color: #1e1b4b;
+      margin: 0 0 4px 0;
+    }
+    .subtitle {
+      font-size: 12pt;
+      color: #4f46e5;
+      font-weight: 600;
+      margin: 0 0 8px 0;
+    }
+    .meta-bar {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9pt;
+      color: #64748b;
+      background: #f8fafc;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #e2e8f0;
+    }
+    .meta-bar strong {
+      color: #0f172a;
+    }
+    .section-card {
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      page-break-inside: avoid;
+      background: #ffffff;
+    }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 6px;
+    }
+    .section-title {
+      font-size: 13pt;
+      font-weight: 700;
+      color: #1e1b4b;
+      margin: 0;
+    }
+    .timer-badge {
+      background: #e0e7ff;
+      color: #4338ca;
+      font-size: 8.5pt;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      letter-spacing: 0.05em;
+    }
+    .cue-box {
+      background: #f0fdf4;
+      border-left: 4px solid #16a34a;
+      padding: 6px 10px;
+      font-size: 9.5pt;
+      color: #166534;
+      margin-bottom: 10px;
+      border-radius: 0 4px 4px 0;
+    }
+    .cue-box strong {
+      color: #14532d;
+    }
+    .speech-box {
+      font-size: 10.5pt;
+      color: #0f172a;
+      line-height: 1.55;
+    }
+    .speech-box p {
+      margin: 0 0 8px 0;
+    }
+    .speech-box p:last-child {
+      margin-bottom: 0;
+    }
+    .speech-box strong {
+      color: #4338ca;
+    }
+    .key-points {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed #e2e8f0;
+      font-size: 9pt;
+      color: #475569;
+    }
+    .key-points strong {
+      color: #334155;
+    }
+    .page-break {
+      page-break-after: always;
+    }
+    .pro-tip {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 8px 12px;
+      font-size: 9pt;
+      color: #92400e;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="title">QuickCart Loom Presentation Speech Script</div>
+    <div class="subtitle">1-Minute-Per-Part Complete Screen Recording Walkthrough</div>
+    <div class="meta-bar">
+      <span><strong>Assignment:</strong> Advanced JS & Async Programming (100 Marks)</span>
+      <span><strong>Target Duration:</strong> ~6 to 7 Minutes</span>
+      <span><strong>Delivery Style:</strong> Confident, Engineering-Focused</span>
+    </div>
+  </div>
+
+  <div class="pro-tip">
+    <strong>💡 Recording Pro-Tip:</strong> Keep VS Code or your terminal on the left side of the screen and the browser on the right. Run each command right before you explain the concepts so the reviewer sees the live terminal output while you speak!
+  </div>
+
+  <!-- SECTION 0: INTRO -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2 class="section-title">🎙️ Introduction & Project Overview</h2>
+      <span class="timer-badge">⏱️ 0:00 - 0:45 (45s)</span>
+    </div>
+    <div class="cue-box">
+      <strong>🖥️ What to show on screen:</strong> Open the repository in VS Code showing the folder tree, or show the clean master dashboard in the browser at <code>index.html</code>.
+    </div>
+    <div class="speech-box">
+      <p>"Hello everyone, my name is Venkat, and today I am excited to walk you through my implementation of the <strong>QuickCart Advanced JavaScript Practical Assignment</strong>.</p>
+      <p>QuickCart is an e-commerce order management system that was facing critical architectural issues in object inheritance, array calculations, JSON parsing, asynchronous order pipelines, and DOM performance bottlenecks.</p>
+      <p>I have resolved all 6 parts from <strong>Part A to Part F</strong> using <strong>pure, modern JavaScript (ES6+)</strong> with zero external libraries. Every requirement runs cleanly both in <strong>Node.js</strong> and deployed on <strong>Vercel</strong>. Let’s dive straight into Part A!"</p>
+    </div>
+  </div>
+
+  <!-- SECTION 1: PART A -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2 class="section-title">📦 Part A: Objects, Prototypes & ES6 Classes</h2>
+      <span class="timer-badge">⏱️ 0:45 - 1:45 (1 min)</span>
+    </div>
+    <div class="cue-box">
+      <strong>🖥️ What to show on screen:</strong> Open <code>part-a-objects-classes/products.js</code> and run: <code>node part-a-objects-classes/products.js</code> in the terminal.
+    </div>
+    <div class="speech-box">
+      <p>"In Part A, we addressed inconsistent product instantiation.</p>
+      <p>In <strong>Task 1</strong>, I created the <code>Product</code> constructor and attached <code>displayProduct()</code> directly to <code>Product.prototype</code>. This is critical for memory optimization because prototype methods share a <strong>single function reference</strong> across all instances via the <code>__proto__</code> chain, rather than duplicating the function in memory on every constructor call.</p>
+      <p>In <strong>Task 2</strong>, I migrated to modern <strong>ES6 classes</strong>, extending <code>ProductClass</code> into <code>ElectronicProduct</code> and <code>ClothingProduct</code>. I used <code>super()</code> in the derived constructors because subclasses in JavaScript cannot access <code>this</code> before <code>super()</code> runs—otherwise, a ReferenceError is thrown due to the Temporal Dead Zone.</p>
+      <p>Finally, in <strong>Task 3</strong>, I implemented modern ES6 syntax for the checkout flow: an arrow function for discount calculations, a template literal for order confirmation, object destructuring for customer details, the rest operator for dynamic pricing totals, and the spread operator to create immutable product copies without mutating the original object."</p>
+    </div>
+    <div class="key-points">
+      <strong>Key Answers Highlighted:</strong> Prototype memory sharing vs constructor closure; <code>__proto__</code> vs <code>prototype</code>; <code>super()</code> initializing <code>this</code>; immutability via spread.
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- SECTION 2: PART B -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2 class="section-title">🛒 Part B: Higher-Order Functions, Map, Set & Object Methods</h2>
+      <span class="timer-badge">⏱️ 1:45 - 2:45 (1 min)</span>
+    </div>
+    <div class="cue-box">
+      <strong>🖥️ What to show on screen:</strong> Open <code>part-b-array-methods/shopping-cart.js</code> and run: <code>node part-b-array-methods/shopping-cart.js</code>.
+    </div>
+    <div class="speech-box">
+      <p>"Moving to Part B, we manage a customer's shopping cart using declarative functional programming.</p>
+      <p>In <strong>Task 1</strong>, I used <code>map()</code> to transform cart items into item totals, <code>filter()</code> to select products with unit price over ₹2,000, and <code>reduce()</code> to compute the total cart value of <strong>₹70,100</strong>. Unlike <code>forEach()</code> which executes side effects and returns undefined, <code>map()</code> produces a new transformed array, and <code>filter()</code> is completely pure without mutating the original cart. I also combined filter and reduce to calculate the Electronics total of <strong>₹62,000</strong>.</p>
+      <p>In <strong>Task 2</strong>, I built an inventory tracker using a <strong>JavaScript Map</strong>. Map is superior to plain objects here because it allows any key type, maintains strict insertion order, and provides an instant <code>.size</code> property. For customer emails, I used a <strong>Set</strong> to remove duplicates in O(N) linear time.</p>
+      <p>In <strong>Task 3</strong>, I compared <code>Object.freeze()</code> with <code>Object.seal()</code>. While <code>seal()</code> permits modifying existing writable properties like price, <code>freeze()</code> makes the object completely read-only, preventing any modification, addition, or deletion."</p>
+    </div>
+    <div class="key-points">
+      <strong>Key Answers Highlighted:</strong> <code>map()</code> vs <code>forEach()</code>; pure non-mutating <code>filter()</code>; Map vs plain Object; <code>Object.freeze()</code> vs <code>Object.seal()</code>.
+    </div>
+  </div>
+
+  <!-- SECTION 3: PART C -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2 class="section-title">🔍 Part C: JSON Handling & Output-Based Debugging</h2>
+      <span class="timer-badge">⏱️ 2:45 - 3:45 (1 min)</span>
+    </div>
+    <div class="cue-box">
+      <strong>🖥️ What to show on screen:</strong> Open <code>part-c-json-debugging/json-handling.js</code> and run: <code>node part-c-json-debugging/json-handling.js</code>.
+    </div>
+    <div class="speech-box">
+      <p>"In Part C, we tackle real-world API data serialization and JSON edge cases.</p>
+      <p>In <strong>Task 1</strong>, I serialized an order containing <code>undefined</code>, <code>null</code>, and a function. During <code>JSON.stringify()</code>, the <code>deliveryDate</code> with value undefined and the <code>calculateTax</code> function are completely stripped. This happens because JSON is a language-agnostic data format that intentionally excludes runtime JavaScript concepts like undefined and closures. However, <code>null</code> is safely preserved as a first-class JSON primitive.</p>
+      <p>In <strong>Task 2</strong>, I verified all 6 output prediction challenges:
+      In objects, <code>undefined</code> is omitted, but in arrays, it converts to <code>null</code> to preserve indices. <code>NaN</code> and <code>Infinity</code> coerce to <code>null</code> because JSON numbers only support finite values. Single-quoted keys throw a <code>SyntaxError</code> because JSON strictly demands double quotes. Circular references throw a <code>TypeError</code> to avoid infinite recursion. And Date objects automatically call <code>.toJSON()</code> to output an ISO 8601 string."</p>
+    </div>
+    <div class="key-points">
+      <strong>Key Answers Highlighted:</strong> Why undefined/functions drop in JSON; array preservation via null; NaN/Infinity handling; circular reference TypeError.
+    </div>
+  </div>
+
+  <!-- SECTION 4: PART D -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2 class="section-title">⚡ Part D: Asynchronous JavaScript & Promises</h2>
+      <span class="timer-badge">⏱️ 3:45 - 4:45 (1 min)</span>
+    </div>
+    <div class="cue-box">
+      <strong>🖥️ What to show on screen:</strong> Open <code>part-d-asynchronous/order-processing.js</code> and run: <code>node part-d-asynchronous/order-processing.js</code>.
+    </div>
+    <div class="speech-box">
+      <p>"Part D covers JavaScript's asynchronous execution architecture.</p>
+      <p>In <strong>Task 1</strong>, we analyze the <strong>Event Loop</strong>. Synchronous code on the Call Stack executes first: 'Order Started' and 'Order Completed'. Then the Event Loop drains the <strong>Microtask Queue</strong>—which is why the Promise resolves next with 'Payment Successful'—before finally picking the setTimeout callback from the <strong>Macrotask Queue</strong> for 'Payment Processing'.</p>
+      <p>In <strong>Tasks 2, 3, and 4</strong>, I demonstrated the evolution of asynchronous JavaScript: starting with nested sequential callbacks, highlighting why callback hell causes inverted control and fragile error handling; then refactoring to clean Promise chains with <code>.then()</code> and <code>.catch()</code>; and ultimately writing a production-grade <code>async/await</code> <code>placeOrder()</code> function with <code>try/catch</code> for both success and gateway timeout errors.</p>
+      <p>In <strong>Task 5</strong>, I executed all 4 Promise combinators: <code>Promise.all</code> fast-fails when the payment service rejects; <code>Promise.allSettled</code> inspects all three outcomes; <code>Promise.race</code> settles with the first response at 1000ms; and <code>Promise.any</code> waits for the first successful resolution."</p>
+    </div>
+    <div class="key-points">
+      <strong>Key Answers Highlighted:</strong> Microtask queue priority over macrotasks; callback hell pitfalls; Promise chaining; all vs allSettled vs race vs any.
+    </div>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- SECTION 5: PART E -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2 class="section-title">🎨 Part E: Performance Optimization & DOM Events (Live Demo)</h2>
+      <span class="timer-badge">⏱️ 4:45 - 5:45 (1 min)</span>
+    </div>
+    <div class="cue-box">
+      <strong>🖥️ What to show on screen:</strong> Switch to the browser and open <code>part-e-optimization-events/index.html</code>. Interact live with the controls!
+    </div>
+    <div class="speech-box">
+      <p>"Now let’s look at Part E in the browser, where I built a responsive performance optimization interface.</p>
+      <p>In <strong>Task 1 (Debouncing)</strong>: Notice as I type rapidly in this search box, the keystroke counter increases with every key, but the actual search query only triggers after I stop typing for <strong>500 ms</strong>. This prevents spamming backend search APIs.</p>
+      <p>In <strong>Task 2 (Throttling)</strong>: In this scrollable viewport, even as I scroll continuously generating dozens of raw events, the throttled handler fires at most <strong>once every 1,000 ms</strong>, perfect for scroll tracking and infinite loading.</p>
+      <p>In <strong>Task 3 (Memoization)</strong>: When I calculate a 10% discount on ₹50,000, it computes fresh. When I click it again with the same arguments, it returns instantly from the closure cache marked with this orange badge!</p>
+      <p>In <strong>Task 4 (Bubbling & Delegation)</strong>: I attached a single event listener to the parent list. When I click Remove, it bubbles up, identifies the button via <code>event.target.closest()</code>, and removes the item. If I check 'Enable stopPropagation', bubbling is stopped. And if I click 'Add Product', newly created elements are handled automatically without attaching any new listeners!"</p>
+    </div>
+    <div class="key-points">
+      <strong>Key Answers Highlighted:</strong> Debounce vs throttle use-cases; closure cache encapsulation; bubbling phase; <code>event.target</code> vs <code>event.currentTarget</code>; delegation memory savings.
+    </div>
+  </div>
+
+  <!-- SECTION 6: PART F & CONCLUSION -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2 class="section-title">🏆 Part F: Final Integration Challenge & Wrap-Up</h2>
+      <span class="timer-badge">⏱️ 5:45 - 6:45 (1 min)</span>
+    </div>
+    <div class="cue-box">
+      <strong>🖥️ What to show on screen:</strong> Run <code>node part-f-integration/quickcart.js</code> or show the master portal on Vercel at <code>index.html</code>.
+    </div>
+    <div class="speech-box">
+      <p>"Finally, Part F integrates every concept we've explored into a real-time order confirmation pipeline.</p>
+      <p>Here in <code>quickcart.js</code>, we take our customer Rahul's order. We model items with a <strong>Product class</strong>, extract properties with <strong>destructuring</strong>, calculate item totals using <strong>map()</strong>, filter premium items over ₹5,000, compute the total order amount using <strong>reduce()</strong>, track unique products via a <strong>Set</strong>, manage stock in a <strong>Map</strong>, ensure configuration immutability with <strong>Object.freeze()</strong>, and simulate network verification using an <strong>async/await confirmation</strong> with try/catch.</p>
+      <p>As you can see in the terminal, the computed values match the reference output character-for-character: Total Order Amount of <strong>₹69,000</strong>, <strong>4 Unique Products</strong>, and status transition from 'Processing...' to 'Confirmed Successfully!'.</p>
+      <p>The entire project is pushed to GitHub at <code>Venkat5674/quickcart_irp_task_3</code> and configured with <code>vercel.json</code> for instant deployment on Vercel. Thank you so much for your time!"</p>
+    </div>
+    <div class="key-points">
+      <strong>Key Summary:</strong> Computed ₹69,000 total; Set unique count 4; async status confirmation; GitHub & Vercel deployment readiness.
+    </div>
+  </div>
+
+</body>
+</html>
