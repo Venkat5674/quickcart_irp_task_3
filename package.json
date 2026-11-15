@@ -1,0 +1,31 @@
+{
+  "name": "quickcart-advanced-javascript",
+  "version": "1.0.0",
+  "description": "QuickCart - Advanced JavaScript Practical Assessment (ES6+, Asynchronous Programming, DOM Optimization)",
+  "main": "part-f-integration/quickcart.js",
+  "scripts": {
+    "start": "npx serve .",
+    "test": "npm run test:all",
+    "test:all": "node part-a-objects-classes/products.js && node part-b-array-methods/shopping-cart.js && node part-c-json-debugging/json-handling.js && node part-d-asynchronous/order-processing.js && node part-f-integration/quickcart.js",
+    "part-a": "node part-a-objects-classes/products.js",
+    "part-b": "node part-b-array-methods/shopping-cart.js",
+    "part-c": "node part-c-json-debugging/json-handling.js",
+    "part-d": "node part-d-asynchronous/order-processing.js",
+    "part-f": "node part-f-integration/quickcart.js"
+  },
+  "keywords": [
+    "javascript",
+    "es6",
+    "async-await",
+    "promises",
+    "event-loop",
+    "prototypes",
+    "classes",
+    "memoization",
+    "debouncing",
+    "throttling",
+    "dom-events"
+  ],
+  "author": "Venkat / QuickCart Engineering",
+  "license": "MIT"
+}

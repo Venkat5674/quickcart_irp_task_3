@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickCart - Part E: Performance Optimization & DOM Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>QuickCart Optimization & DOM Events</h1>
+      <p>Part E — Interactive Implementation of Debouncing, Throttling, Memoization, Event Bubbling & Delegation</p>
+      <div class="badge-row">
+        <span class="badge">⚡ ES6+ JavaScript</span>
+        <span class="badge">⏱️ 500ms Debounce</span>
+        <span class="badge">⏳ 1000ms Throttle</span>
+        <span class="badge">💾 Cache Memoization</span>
+        <span class="badge">🎯 Event Delegation</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- TASK 1: Debouncing -->
+      <section class="card" id="debounce-section">
+        <div class="card-header">
+          <h2 class="card-title">🔍 Task 1: Debouncing (500ms)</h2>
+        </div>
+        <p class="card-subtitle">
+          Waits for the user to stop typing for <strong>500 ms</strong> before firing the search callback, preventing unnecessary API load.
+        </p>
+
+        <div class="form-group">
+          <label class="form-label" for="searchInput">Search Products in QuickCart:</label>
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="Type fast here (e.g. 'Laptop', 'Headphones')..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-value" id="rawKeystrokesCount">0</div>
+            <div class="stat-label">Raw Keystrokes (Fired)</div>
+          </div>
+          <div class="stat-box success">
+            <div class="stat-value" id="debounceTriggersCount">0</div>
+            <div class="stat-label">Debounced Searches (Saved!)</div>
+          </div>
+        </div>
+
+        <div class="log-box" id="debounceLogs">
+          <div class="log-entry">Waiting for typing in search box...</div>
+        </div>
+      </section>
+
+      <!-- TASK 2: Throttling -->
+      <section class="card" id="throttle-section">
+        <div class="card-header">
+          <h2 class="card-title">⏱️ Task 2: Throttling (1000ms)</h2>
+        </div>
+        <p class="card-subtitle">
+          Ensures the scroll handler executes at most <strong>once every 1,000 ms</strong>, even during vigorous high-frequency scrolling.
+        </p>
+
+        <div class="form-group">
+          <label class="form-label">Scrollable Container:</label>
+          <div class="scroll-viewport" id="scrollContainer">
+            <div class="scroll-content">
+              <span>▲ Scroll Down Rapidly ▲</span>
+              <span>⚡ Throttled at 1000ms interval ⚡</span>
+              <span>▼ Bottom of Container ▼</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-value" id="rawScrollEventsCount">0</div>
+            <div class="stat-label">Raw Scroll Events</div>
+          </div>
+          <div class="stat-box success">
+            <div class="stat-value" id="throttledExecutionsCount">0</div>
+            <div class="stat-label">Throttled Calls (1/sec)</div>
+          </div>
+        </div>
+
+        <div class="log-box" id="throttleLogs">
+          <div class="log-entry">Scroll the box above to see throttling in action...</div>
+        </div>
+      </section>
+
+      <!-- TASK 3: Memoization -->
+      <section class="card" id="memoization-section">
+        <div class="card-header">
+          <h2 class="card-title">💾 Task 3: Memoization</h2>
+        </div>
+        <p class="card-subtitle">
+          Caches results of <code>calculateDiscount(price, percentage)</code> by arguments. Repeated inputs return instantly from cache!
+        </p>
+
+        <div style="display: flex; gap: 0.75rem; margin-bottom: 0.75rem;">
+          <div style="flex: 1;">
+            <label class="form-label" for="memoPriceInput">Price (₹):</label>
+            <input type="number" id="memoPriceInput" class="form-control" value="50000" />
+          </div>
+          <div style="flex: 1;">
+            <label class="form-label" for="memoPercentInput">Discount (%):</label>
+            <input type="number" id="memoPercentInput" class="form-control" value="10" />
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem;">
+          <button class="btn btn-primary" id="calcDiscountBtn" type="button">
+            Calculate Discount
+          </button>
+          <div id="memoResultOutput" style="font-size: 0.95rem; font-weight: 600;">
+            Result: ₹45000 (Fresh Calculation)
+          </div>
+        </div>
+
+        <div class="log-box" id="memoLogs">
+          <div class="log-entry">Click Calculate multiple times to observe cache hits...</div>
+        </div>
+      </section>
+
+      <!-- TASK 4: Bubbling & Event Delegation -->
+      <section class="card" id="delegation-section">
+        <div class="card-header">
+          <h2 class="card-title">🎯 Task 4: Bubbling & Delegation</h2>
+        </div>
+        <p class="card-subtitle">
+          Demonstrates event bubbling, stopping bubbling with <code>event.stopPropagation()</code>, and handling dynamic removals via parent delegation.
+        </p>
+
+        <label class="toggle-wrapper">
+          <input type="checkbox" id="stopPropCheckbox" />
+          <span><strong>Enable event.stopPropagation()</strong> on Remove button (blocks bubbling to parent)</span>
+        </label>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <label class="form-label" style="margin-bottom:0;">Product Cart Items (Parent Container):</label>
+          <button class="btn btn-primary btn-sm" id="addProductBtn" type="button">
+            + Add Product (Dynamic)
+          </button>
+        </div>
+
+        <div class="product-list" id="productListContainer">
+          <div class="product-item" data-id="101">
+            <div class="product-info">
+              <span class="product-title">Dell XPS 15 Laptop</span>
+              <span class="product-meta">ID: #101 · Price: ₹50,000 · Category: Electronics</span>
+            </div>
+            <button class="btn btn-danger btn-sm btn-remove-product" type="button">
+              Remove
+            </button>
+          </div>
+
+          <div class="product-item" data-id="102">
+            <div class="product-info">
+              <span class="product-title">Logitech MX Master 3 Mouse</span>
+              <span class="product-meta">ID: #102 · Price: ₹800 · Category: Accessories</span>
+            </div>
+            <button class="btn btn-danger btn-sm btn-remove-product" type="button">
+              Remove
+            </button>
+          </div>
+
+          <div class="product-item" data-id="103">
+            <div class="product-info">
+              <span class="product-title">Keychron K2 Mechanical Keyboard</span>
+              <span class="product-meta">ID: #103 · Price: ₹1,500 · Category: Accessories</span>
+            </div>
+            <button class="btn btn-danger btn-sm btn-remove-product" type="button">
+              Remove
+            </button>
+          </div>
+        </div>
+
+        <div class="log-box" id="bubblingLogs">
+          <div class="log-entry">Click any Remove button or item card to inspect bubbling events...</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PART E THEORETICAL QUESTIONS & DETAILED ANSWERS -->
+    <section class="qa-section">
+      <h2>📚 Part E Detailed Conceptual Answers & Analysis</h2>
+
+      <div class="accordion-item">
+        <div class="accordion-question">Q1: What is the difference between debouncing and throttling?</div>
+        <div class="accordion-answer">
+          <strong>Debouncing</strong> delays the execution of a function until after a specific amount of quiet time has elapsed since its last invocation. Every time the event occurs before the timer expires, the timer resets.<br />
+          <strong>Throttling</strong> limits the maximum rate at which a function can fire, guaranteeing that it executes at most once per defined time window regardless of how many times the event triggers.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-question">Q2: Which suits search suggestions?</div>
+        <div class="accordion-answer">
+          <strong>Debouncing</strong> is ideally suited for search suggestions. When a user is typing a keyword into a search field, we do not want to trigger backend network requests for every single keystroke. Debouncing ensures that the search request is dispatched only when the user pauses or stops typing for a designated delay (e.g. 500 ms).
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-question">Q3: Which suits scroll and resize events?</div>
+        <div class="accordion-answer">
+          <strong>Throttling</strong> is best suited for scroll and window resize events. Because users continuously scroll or drag-resize a window, debouncing would only update when scrolling completely halts. Throttling provides a smooth, regular heartbeat of updates (e.g., once every 1,000 ms or 16 ms for 60fps) to calculate scroll positions, lazy-load images, or update parallax effects.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-question">Q4: What is memoization and how does it improve performance?</div>
+        <div class="accordion-answer">
+          <strong>Memoization</strong> is an optimization strategy where the return values of expensive, deterministic function calls are stored in a lookup cache keyed by their arguments. When the function is subsequently invoked with identical arguments, it retrieves the precomputed value directly from cache in <code>O(1)</code> time, completely avoiding redundant CPU-heavy computations.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-question">Q5: What role do closures play in memoization?</div>
+        <div class="accordion-answer">
+          In JavaScript, memoization relies on <strong>closures</strong> to encapsulate the cache object (such as a <code>Map</code> or plain object) within the outer wrapper function's lexical scope. The inner returned function maintains a permanent reference to this private cache across multiple invocations without polluting the global scope or exposing the cache to external tampering.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-question">Q6: What is event bubbling?</div>
+        <div class="accordion-answer">
+          <strong>Event Bubbling</strong> is the default phase of JavaScript's event propagation model where an event triggered on a deeply nested target element propagates (bubbles) upwards through all of its ancestor elements in the DOM hierarchy (from child &rarr; parent &rarr; <code>body</code> &rarr; <code>html</code> &rarr; <code>document</code> &rarr; <code>window</code>).
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-question">Q7: What is event delegation and why is it useful for dynamically created elements?</div>
+        <div class="accordion-answer">
+          <strong>Event Delegation</strong> is an architectural pattern that attaches a single event listener to a shared parent element instead of binding separate event listeners to every individual child. Because events bubble up to the parent, the parent listener can identify the originating child element using <code>event.target</code>.<br />
+          <strong>Dynamic Elements Benefit:</strong> When new elements are added dynamically to the DOM at runtime, they immediately inherit event handling from the parent listener without needing manual listener registration or risking memory leaks.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-question">Q8: What does event.stopPropagation() do?</div>
+        <div class="accordion-answer">
+          <code>event.stopPropagation()</code> halts the propagation of the current event in the DOM, preventing it from traveling any further up the tree to ancestor elements (or down during the capturing phase). It does not prevent other handlers on the current element itself (which is what <code>stopImmediatePropagation</code> does).
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-question">Q9: What is the difference between event.target and event.currentTarget?</div>
+        <div class="accordion-answer">
+          - <code>event.target</code> refers to the <strong>actual, innermost DOM element</strong> that initiated the event (e.g., the specific <code>&lt;button&gt;</code> that was clicked).<br />
+          - <code>event.currentTarget</code> refers to the <strong>DOM element to which the event listener is currently attached</strong> (e.g., the parent <code>&lt;div class="product-list"&gt;</code> handling the delegated event).
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
