@@ -1,16 +1,6 @@
-/**
- * QuickCart - Advanced JavaScript Practical Assignment
- * Part F: Final Real-Time Integration Challenge
- * File: part-f-integration/quickcart.js
- */
+// QuickCart - Part F: Final Real-Time Integration Challenge
 
-console.log("==================================================");
-console.log("  PART F: Final Real-Time Integration Challenge");
-console.log("==================================================\n");
-
-// ============================================================================
-// 1. ES6 Product Class
-// ============================================================================
+// Product class definition
 class Product {
   constructor(id, name, price, qty) {
     this.id = id;
@@ -19,18 +9,15 @@ class Product {
     this.qty = qty;
   }
 
-  // Calculate total price for this item
   getTotalPrice() {
     return this.price * this.qty;
   }
 
-  // Formatted product summary line
   getSummaryLine() {
     return `${this.name.padEnd(8)} - ₹${this.getTotalPrice()}`;
   }
 }
 
-// Initial Raw Products Data as specified
 const rawProducts = [
   { id: 1, name: "Laptop", price: 50000, qty: 1 },
   { id: 2, name: "Mouse", price: 1000, qty: 2 },
@@ -38,62 +25,39 @@ const rawProducts = [
   { id: 4, name: "Keyboard", price: 2000, qty: 1 }
 ];
 
-// Instantiate Product instances
+// Product instances via destructuring
 const products = rawProducts.map(
-  ({ id, name, price, qty }) => new Product(id, name, price, qty) // Destructuring in map callback
+  ({ id, name, price, qty }) => new Product(id, name, price, qty)
 );
 
-// ============================================================================
-// 2. Destructuring & Array Methods (map, filter, reduce)
-// ============================================================================
-// map() for product item totals and formatted lines
-const productLines = products.map((product) => {
-  const { name } = product; // Destructuring property
-  return product.getSummaryLine();
-});
+// map() for product line totals
+const productLines = products.map(product => product.getSummaryLine());
 
-// filter() for products over ₹5,000 (demonstrating high-value items filter)
+// filter() for products over ₹5,000
 const premiumProducts = products.filter(({ price }) => price > 5000);
 
-// reduce() for the total order amount
+// reduce() for total order amount
 const totalOrderAmount = products.reduce(
-  (accumulator, product) => accumulator + product.getTotalPrice(),
+  (acc, product) => acc + product.getTotalPrice(),
   0
 );
 
-// ============================================================================
-// 3. Set for Unique Product IDs & Map for Inventory
-// ============================================================================
-// Set of unique product IDs
+// Set for unique product IDs
 const uniqueProductIds = new Set(products.map(({ id }) => id));
 
-// Map for inventory tracking
+// Map for inventory
 const inventoryMap = new Map();
-products.forEach((product) => {
-  const { id, name, qty } = product;
-  inventoryMap.set(id, { name, stock: qty * 10 }); // e.g. warehouse stock
+products.forEach(({ id, name, qty }) => {
+  inventoryMap.set(id, { name, stock: qty * 10 });
 });
 
-// ============================================================================
-// 4. Object.freeze() on Order Configuration
-// ============================================================================
+// Object.freeze() on configuration
 const orderConfig = Object.freeze({
   customerName: "Rahul",
-  currencySymbol: "₹",
-  taxRate: 0.18,
-  allowBackorders: false
+  currency: "₹"
 });
 
-// Attempt mutation to demonstrate immutability under Object.freeze
-try {
-  orderConfig.customerName = "Intruder";
-} catch {
-  // Silent or strict error handled
-}
-
-// ============================================================================
-// 5. JSON.stringify() on the Order Payload
-// ============================================================================
+// JSON.stringify() on order
 const orderPayload = {
   customer: orderConfig.customerName,
   items: products.map(({ id, name, price, qty }) => ({
@@ -101,66 +65,40 @@ const orderPayload = {
     name,
     price,
     qty,
-    itemTotal: price * qty
+    total: price * qty
   })),
   totalAmount: totalOrderAmount,
-  uniqueItemCount: uniqueProductIds.size,
-  createdAt: new Date().toISOString()
+  uniqueProductsCount: uniqueProductIds.size
 };
+const serializedOrder = JSON.stringify(orderPayload);
 
-const serializedOrderJSON = JSON.stringify(orderPayload, null, 2);
-
-// ============================================================================
-// 6. Async/Await Order Confirmation with try/catch & Template Literal Output
-// ============================================================================
-async function processOrderConfirmation(orderData) {
+// async/await confirmation with try/catch and template literal
+async function processOrderConfirmation() {
   try {
-    const { customerName } = orderConfig; // Destructuring
+    const { customerName } = orderConfig;
 
-    // 1. Initial output banner
-    console.log(`====== QUICKCART ORDER SUMMARY ======`);
+    console.log("====== QUICKCART ORDER SUMMARY ======");
     console.log(`Customer: ${customerName}`);
-    console.log(`Products:`);
-    productLines.forEach((line) => console.log(line));
+    console.log("Products:");
+    productLines.forEach(line => console.log(line));
     console.log(`Total Order Amount: ₹${totalOrderAmount}`);
     console.log(`Unique Products: ${uniqueProductIds.size}`);
-    console.log(`Order Status: Processing...`);
+    console.log("Order Status: Processing...");
 
-    // Simulate asynchronous server confirmation delay
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    // Simulated network processing delay
+    await new Promise(resolve => setTimeout(resolve, 800));
 
-    // Simulated status transition
-    console.log(`Order Status: Confirmed Successfully!`);
-    console.log(`=====================================`);
-
-    // Complete formatted order summary text via template literal
-    const orderSummaryText = `
-====== QUICKCART ORDER SUMMARY ======
-Customer: ${customerName}
-Products:
-${productLines.join("\n")}
-Total Order Amount: ₹${totalOrderAmount}
-Unique Products: ${uniqueProductIds.size}
-Order Status: Confirmed Successfully!
-=====================================`;
-
-    return {
-      success: true,
-      summaryText: orderSummaryText,
-      payload: orderData
-    };
+    console.log("Order Status: Confirmed Successfully!");
+    console.log("=====================================");
   } catch (error) {
     console.error(`Order Confirmation Failed: ${error.message}`);
-    return { success: false, error: error.message };
   }
 }
 
-// Execute confirmation if run directly
 if (typeof require !== "undefined" && require.main === module) {
-  processOrderConfirmation(orderPayload);
+  processOrderConfirmation();
 }
 
-// Export for module/testing usage
 if (typeof module !== "undefined" && module.exports) {
   module.exports = {
     Product,
@@ -172,7 +110,7 @@ if (typeof module !== "undefined" && module.exports) {
     inventoryMap,
     orderConfig,
     orderPayload,
-    serializedOrderJSON,
+    serializedOrder,
     processOrderConfirmation
   };
 }
