@@ -1,0 +1,19 @@
+{
+  "name": "quickcart-part-e-dom-events",
+  "version": "1.0.0",
+  "description": "QuickCart Part E - Performance Optimization & DOM Events (Debouncing, Throttling, Memoization, Bubbling & Delegation)",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "javascript",
+    "debounce",
+    "throttle",
+    "memoize",
+    "event-delegation",
+    "event-bubbling"
+  ],
+  "author": "Venkat / QuickCart",
+  "license": "MIT"
+}

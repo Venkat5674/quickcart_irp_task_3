@@ -113,13 +113,21 @@ You can open the web interface directly in any modern browser without a build st
   ```
 - **Part E Optimization Playground:** Open `part-e-optimization-events/index.html` in your browser.
 
-### Deploying to Vercel
+### Deploying to Vercel (Master Portal & Part E)
 
-This repository includes a preconfigured `vercel.json` and static root `index.html`. To deploy:
-1. Push this repository to GitHub: `https://github.com/Venkat5674/quickcart_irp_task_3.git`.
-2. Connect the repository in [Vercel Dashboard](https://vercel.com/new).
-3. Leave build settings as default (static site) and click **Deploy**.
-4. The deployment will be live instantly!
+This repository includes preconfigured `vercel.json` routing rules for both the root master portal and Part E:
+1. Connect the GitHub repository `https://github.com/Venkat5674/quickcart_irp_task_3.git` in the [Vercel Dashboard](https://vercel.com/new).
+2. Leave the build settings as default (static site) and click **Deploy**.
+3. Once deployed, the following routes are live and ready:
+   - **`/`** &rarr; Master Assessment Portal (interactive in-browser terminal for all parts).
+   - **`/part-e`** &rarr; Dedicated full-screen **Part E Performance Optimization & DOM Events** interface.
+   - **`/part-e-optimization-events`** &rarr; Direct path to Part E standalone UI.
+   - **`/speech-guide`** &rarr; The 1-minute-per-part Loom presentation guide.
+
+#### Deploying Part E as its Own Standalone Vercel Project (Optional)
+If you wish to deploy **only Part E** as a dedicated Vercel project:
+1. In Vercel Project Settings &rarr; **General** &rarr; **Root Directory**, set it to `part-e-optimization-events`.
+2. Click **Save** and **Redeploy**. It contains its own dedicated `vercel.json` and `package.json` for independent standalone hosting!
 
 ---
 

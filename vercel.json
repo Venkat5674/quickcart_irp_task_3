@@ -1,5 +1,35 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/part-e",
+      "destination": "/part-e-optimization-events/index.html"
+    },
+    {
+      "source": "/part-e/(.*)",
+      "destination": "/part-e-optimization-events/$1"
+    },
+    {
+      "source": "/part-e-optimization-events",
+      "destination": "/part-e-optimization-events/index.html"
+    },
+    {
+      "source": "/dom-events",
+      "destination": "/part-e-optimization-events/index.html"
+    },
+    {
+      "source": "/style.css",
+      "destination": "/part-e-optimization-events/style.css"
+    },
+    {
+      "source": "/script.js",
+      "destination": "/part-e-optimization-events/script.js"
+    },
+    {
+      "source": "/speech-guide",
+      "destination": "/speech-guide.html"
+    }
+  ]
 }
